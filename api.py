@@ -1,4 +1,5 @@
 from fastapi import FastAPI, HTTPException
+from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 import requests
 import math
@@ -6,6 +7,14 @@ import json
 
 # Inicializa o FastAPI
 app = FastAPI()
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],  # Isso permite todas as origens; altere conforme necessário.
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
 # Carrega os benchmarks do arquivo JSON
 with open('benchmarks.json', 'r', encoding='utf-8') as f:
