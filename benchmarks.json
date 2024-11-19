@@ -1,0 +1,288 @@
+{
+  "campanhas": {
+    "trafego": {
+      "ctr_media_geral": 1.51,
+      "cpc_media_geral_usd": 0.83,
+      "cpc_media_geral_brl": 4.81,
+      "setores": {
+        "Animais e animais de estimacao": {
+          "ctr_trafego": 1.63,
+          "cpc_trafego_usd": 0.76,
+          "cpc_trafego_brl": 4.41
+        },
+        "Vestuario/moda e joias": {
+          "ctr_trafego": 1.13,
+          "cpc_trafego_usd": 1.11,
+          "cpc_trafego_brl": 6.44
+        },
+        "Artes": {
+          "ctr_trafego": 2.55,
+          "cpc_trafego_usd": 0.44,
+          "cpc_trafego_brl": 2.55
+        },
+        "Advogados e servicos juridicos": {
+          "ctr_trafego": 0.99,
+          "cpc_trafego_usd": 1.15,
+          "cpc_trafego_brl": 6.67
+        },
+        "Automotivo - A venda": {
+          "ctr_trafego": 1.18,
+          "cpc_trafego_usd": 0.70,
+          "cpc_trafego_brl": 4.06
+        },
+        "Automotivo - Reparo, Servico e Pecas": {
+          "ctr_trafego": 0.99,
+          "cpc_trafego_usd": 0.99,
+          "cpc_trafego_brl": 5.74
+        },
+        "Beleza e cuidados pessoais": {
+          "ctr_trafego": 1.34,
+          "cpc_trafego_usd": 0.88,
+          "cpc_trafego_brl": 5.10
+        },
+        "Servicos prestados as empresas": {
+          "ctr_trafego": 1.37,
+          "cpc_trafego_usd": 0.84,
+          "cpc_trafego_brl": 4.87
+        },
+        "Carreira e Emprego": {
+          "ctr_trafego": 1.31,
+          "cpc_trafego_usd": 0.70,
+          "cpc_trafego_brl": 4.06
+        },
+        "Dentistas e servicos odontologicos": {
+          "ctr_trafego": 0.81,
+          "cpc_trafego_usd": 1.27,
+          "cpc_trafego_brl": 7.37
+        },
+        "Educacao e Instrucao": {
+          "ctr_trafego": 1.20,
+          "cpc_trafego_usd": 0.79,
+          "cpc_trafego_brl": 4.58
+        },
+        "Financas e Seguros": {
+          "ctr_trafego": 0.88,
+          "cpc_trafego_usd": 1.11,
+          "cpc_trafego_brl": 6.44
+        },
+        "Mobilia": {
+          "ctr_trafego": 1.15,
+          "cpc_trafego_usd": 1.19,
+          "cpc_trafego_brl": 6.90
+        },
+        "Saude": {
+          "ctr_trafego": 1.68,
+          "cpc_trafego_usd": 0.90,
+          "cpc_trafego_brl": 5.22
+        },
+        "Casa e melhorias residenciais": {
+          "ctr_trafego": 1.23,
+          "cpc_trafego_usd": 0.95,
+          "cpc_trafego_brl": 5.51
+        },
+        "Industrial e Comercial": {
+          "ctr_trafego": 1.03,
+          "cpc_trafego_usd": 0.80,
+          "cpc_trafego_brl": 4.64
+        },
+        "Servicos pessoais": {
+          "ctr_trafego": 1.28,
+          "cpc_trafego_usd": 0.87,
+          "cpc_trafego_brl": 5.05
+        },
+        "Medicos e Cirurgioes": {
+          "ctr_trafego": 1.02,
+          "cpc_trafego_usd": 1.08,
+          "cpc_trafego_brl": 6.26
+        },
+        "Imobiliaria": {
+          "ctr_trafego": 2.45,
+          "cpc_trafego_usd": 0.65,
+          "cpc_trafego_brl": 3.77
+        },
+        "Restaurantes e comida": {
+          "ctr_trafego": 2.29,
+          "cpc_trafego_usd": 0.52,
+          "cpc_trafego_brl": 3.02
+        },
+        "Compras, itens colecionaveis e presentes": {
+          "ctr_trafego": 1.82,
+          "cpc_trafego_usd": 0.65,
+          "cpc_trafego_brl": 3.77
+        },
+        "Esportes e recreacao": {
+          "ctr_trafego": 1.30,
+          "cpc_trafego_usd": 0.77,
+          "cpc_trafego_brl": 4.47
+        },
+        "Viagem": {
+          "ctr_trafego": 2.06,
+          "cpc_trafego_usd": 0.43,
+          "cpc_trafego_brl": 2.49
+        }
+      }
+    },
+    "leads": {
+      "ctr_media_geral": 2.50,
+      "cpc_media_geral_usd": 1.92,
+      "cpc_media_geral_brl": 11.14,
+      "cvr_media_geral": 8.25,
+      "cpl_media_geral_usd": 23.10,
+      "cpl_media_geral_brl": 134.0,
+      "setores": {
+        "Artes": {
+          "ctr_leads": 3.70,
+          "cpc_leads_usd": 0.87,
+          "cpc_leads_brl": 5.05,
+          "cvr_leads": 9.77,
+          "cpl_leads_usd": 13.46,
+          "cpl_leads_brl": 78.07
+        },
+        "Advogados e servicos juridicos": {
+          "ctr_leads": 1.79,
+          "cpc_leads_usd": 5.42,
+          "cpc_leads_brl": 31.44,
+          "cvr_leads": 5.92,
+          "cpl_leads_usd": 78.26,
+          "cpl_leads_brl": 453.91
+        },
+        "Automotivo - Reparo, servico e pecas": {
+          "ctr_leads": 1.38,
+          "cpc_leads_usd": 2.86,
+          "cpc_leads_brl": 16.59,
+          "cvr_leads": 5.35,
+          "cpl_leads_usd": 58.56,
+          "cpl_leads_brl": 339.65
+        },
+        "Beleza e cuidados pessoais": {
+          "ctr_leads": 2.46,
+          "cpc_leads_usd": 2.16,
+          "cpc_leads_brl": 12.53,
+          "cvr_leads": 4.61,
+          "cpl_leads_usd": 52.46,
+          "cpl_leads_brl": 304.27
+        },
+        "Servicos prestados as empresas": {
+          "ctr_leads": 2.70,
+          "cpc_leads_usd": 1.73,
+          "cpc_leads_brl": 10.03,
+          "cvr_leads": 7.57,
+          "cpl_leads_usd": 22.65,
+          "cpl_leads_brl": 131.37
+        },
+        "Carreira e Emprego": {
+          "ctr_leads": 2.37,
+          "cpc_leads_usd": 1.34,
+          "cpc_leads_brl": 7.77,
+          "cvr_leads": 7.02,
+          "cpl_leads_usd": 18.17,
+          "cpl_leads_brl": 105.39
+        },
+        "Dentistas e servicos odontologicos": {
+          "ctr_leads": 1.80,
+          "cpc_leads_usd": 3.82,
+          "cpc_leads_brl": 22.16,
+          "cvr_leads": 11.34,
+          "cpl_leads_usd": 29.08,
+          "cpl_leads_brl": 168.66
+        },
+        "Educacao e Instrucao": {
+          "ctr_leads": 2.44,
+          "cpc_leads_usd": 1.80,
+          "cpc_leads_brl": 10.44,
+          "cvr_leads": 8.05,
+          "cpl_leads_usd": 27.94,
+          "cpl_leads_brl": 162.05
+        },
+        "Financas e Seguros": {
+          "ctr_leads": 1.98,
+          "cpc_leads_usd": 2.94,
+          "cpc_leads_brl": 17.05,
+          "cvr_leads": 5.62,
+          "cpl_leads_usd": 30.88,
+          "cpl_leads_brl": 179.10
+        },
+        "Mobilia": {
+          "ctr_leads": 2.55,
+          "cpc_leads_usd": 1.58,
+          "cpc_leads_brl": 9.16,
+          "cvr_leads": 7.29,
+          "cpl_leads_usd": 29.08,
+          "cpl_leads_brl": 168.66
+        },
+        "Saude": {
+          "ctr_leads": 1.66,
+          "cpc_leads_usd": 3.60,
+          "cpc_leads_brl": 20.88,
+          "cvr_leads": 5.76,
+          "cpl_leads_usd": 60.95,
+          "cpl_leads_brl": 353.51
+        },
+        "Casa e melhorias residenciais": {
+          "ctr_leads": 1.80,
+          "cpc_leads_usd": 2.08,
+          "cpc_leads_brl": 12.06,
+          "cvr_leads": 8.90,
+          "cpl_leads_usd": 20.49,
+          "cpl_leads_brl": 118.84
+        },
+        "Industrial e Comercial": {
+          "ctr_leads": 1.50,
+          "cpc_leads_usd": 2.69,
+          "cpc_leads_brl": 15.60,
+          "cvr_leads": 10.13,
+          "cpl_leads_usd": 37.71,
+          "cpl_leads_brl": 218.72
+        },
+        "Servicos pessoais (casamentos, limpeza, etc.)": {
+          "ctr_leads": 2.72,
+          "cpc_leads_usd": 1.88,
+          "cpc_leads_brl": 10.90,
+          "cvr_leads": 8.76,
+          "cpl_leads_usd": 19.49,
+          "cpl_leads_brl": 113.04
+        },
+        "Medicos e Cirurgioes": {
+          "ctr_leads": 3.17,
+          "cpc_leads_usd": 3.63,
+          "cpc_leads_brl": 21.05,
+          "cvr_leads": 4.99,
+          "cpl_leads_usd": 60.95,
+          "cpl_leads_brl": 353.51
+        },
+        "Imobiliaria": {
+          "ctr_leads": 3.69,
+          "cpc_leads_usd": 1.22,
+          "cpc_leads_brl": 7.08,
+          "cvr_leads": 9.58,
+          "cpl_leads_usd": 12.43,
+          "cpl_leads_brl": 72.09
+        },
+        "Restaurantes e comida": {
+          "ctr_leads": 1.85,
+          "cpc_leads_usd": 2.61,
+          "cpc_leads_brl": 15.14,
+          "cvr_leads": 5.63,
+          "cpl_leads_usd": 45.15,
+          "cpl_leads_brl": 261.87
+        },
+        "Esportes e recreacao": {
+          "ctr_leads": 3.29,
+          "cpc_leads_usd": 1.11,
+          "cpc_leads_brl": 6.44,
+          "cvr_leads": 8.24,
+          "cpl_leads_usd": 15.33,
+          "cpl_leads_brl": 88.91
+        },
+        "Viagem": {
+          "ctr_leads": 6.62,
+          "cpc_leads_usd": 0.96,
+          "cpc_leads_brl": 5.57,
+          "cvr_leads": 3.95,
+          "cpl_leads_usd": 26.05,
+          "cpl_leads_brl": 151.09
+        }
+      }
+    }
+  }
+}

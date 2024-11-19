@@ -1,6 +1,9 @@
-api.py
+api-teste.py
 def_reach_estimate.py
 delivery_estimate.py
 reach_estimate.py
 response.json
 algoritmo-aurea.pem
+payload_teste.json
+backup_algoritmo2.py
+curl_teste.txt
