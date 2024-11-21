@@ -7,3 +7,5 @@ algoritmo-aurea.pem
 payload_teste.json
 backup_algoritmo2.py
 curl_teste.txt
+__pycache__/
+venv/
