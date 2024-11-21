@@ -7,5 +7,11 @@ algoritmo-aurea.pem
 payload_teste.json
 backup_algoritmo2.py
 curl_teste.txt
+<<<<<<< HEAD
 __pycache__/
 venv/
+=======
+api_backup.py
+consolidar_benchmarks.py
+__pycache__/
+>>>>>>> f8d5018 (atualiza API e Benchmarks)

@@ -18,7 +18,7 @@ app.add_middleware(
 
 # Carrega os benchmarks do arquivo JSON
 with open('benchmarks.json', 'r', encoding='utf-8') as f:
-    benchmarks = json.load(f)["campanhas"]
+    benchmarks = json.load(f)  # Carregando diretamente como uma lista
 
 # Modelo para requisição
 class EstimativaRequest(BaseModel):
@@ -58,29 +58,24 @@ def obter_tamanho_publico(localizacao, access_token, age_min, age_max, gender_li
 
 # Função para estimar o alcance
 def estimar_alcance(investimento, categoria, localizacao, tipo_campanha, access_token, age_min, age_max, gender_list, interests):
-    if tipo_campanha not in benchmarks:
-        raise ValueError("Tipo de campanha não encontrado nos benchmarks")
-
-    campanha = benchmarks[tipo_campanha]
-    if categoria not in campanha["setores"]:
+    # Busca a categoria no JSON
+    setor = next((item for item in benchmarks if item["Categoria"] == categoria), None)
+    if not setor:
         raise ValueError("Categoria não encontrada nos benchmarks")
+    
+    # Obtém as métricas necessárias
+    ctr = float(setor.get("CTR (%)").replace(',', '.'))  # Converte para float
+    cpc = float(setor.get("CPC (R$)").replace(',', '.'))  # Converte para float
 
-    setor = campanha["setores"][categoria]
-    ctr_key = f"ctr_{tipo_campanha}"
-    cpc_key = f"cpc_{tipo_campanha}_brl"
-
-    ctr = setor.get(ctr_key)
-    cpc = setor.get(cpc_key)
-
-    if not ctr or not cpc:
-        raise ValueError("Dados de CTR ou CPC não encontrados para o setor e tipo de campanha fornecidos")
-
+    # Calcula o tamanho do público
     tamanho_publico = obter_tamanho_publico(localizacao, access_token, age_min, age_max, gender_list, interests)
 
+    # Calcula o alcance estimado
     numero_cliques = investimento / cpc
     numero_impressoes = numero_cliques / (ctr / 100)
     alcance_estimado = min(numero_impressoes, tamanho_publico)
 
+    # Adiciona margem de erro
     margem_erro = min(0.05 * investimento, 0.1 * alcance_estimado)
     alcance_estimado_com_margem = alcance_estimado + margem_erro
 
@@ -105,6 +100,7 @@ async def estimativa(request: EstimativaRequest):
     except ValueError as e:
         raise HTTPException(status_code=400, detail=str(e))
     except Exception as e:
-        raise HTTPException(status_code=500, detail=str(e))
+        print(f"Erro interno: {e}")  # Log do erro para depuração
+        raise HTTPException(status_code=500, detail="Erro interno no servidor")
 
 # Para executar a aplicação, use o comando: uvicorn nome_do_arquivo:app --reload
