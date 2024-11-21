@@ -1,0 +1,17 @@
+### TAREFAS
+
+# BACKEND
+>> Não está exibindo o total do publico na tela final do investimento
+>> Preciso tratar os dados no JSON na parte de localidade: País, Estado, Cidade, Bairro
+>> Verificar como está enviando orçamento e se está ok
+>> Verificar como está enviando "estratégia" e se está correto
+>> Verificar genero ambos
+>> Verificar faixa etária
+>> 
+
+# FRONTEND
+>> Quando seleciono o interesse no front, exibe o ID nos selecionados
+
+# Tratar erro
+
+{"age_min": 18,   "age_max": 26,   "genders": [1, 1, 2],"geo_locations": {"cities": [{"key": "269969"}]},"interests":[{6003157909075}]}
