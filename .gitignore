@@ -1,17 +1,4 @@
-api-teste.py
-def_reach_estimate.py
-delivery_estimate.py
-reach_estimate.py
-response.json
 algoritmo-aurea.pem
-payload_teste.json
-backup_algoritmo2.py
-curl_teste.txt
-<<<<<<< HEAD
+notes.txt
 __pycache__/
-venv/
-=======
-api_backup.py
-consolidar_benchmarks.py
-__pycache__/
->>>>>>> f8d5018 (atualiza API e Benchmarks)
+.venv/

@@ -1,140 +1,34 @@
-[
-    {
-        "Categoria": "Animais e Pets",
-        "CPM (R$)": "3,36",
-        "CTR (%)": "1,87",
-        "CPC (R$)": "3,36"
+{
+    "Alcance e visibilidade": {
+      "setores": {
+        "Varejo": {
+          "ctr": 1.5,
+          "cpc": 0.50
+        },
+        "Tecnologia": {
+          "ctr": 2.0,
+          "cpc": 0.75
+        },
+        "Saúde": {
+          "ctr": 1.2,
+          "cpc": 0.60
+        }
+      }
     },
-    {
-        "Categoria": "Vestuário, Moda e Joias",
-        "CPM (R$)": "6,21",
-        "CTR (%)": "1,14",
-        "CPC (R$)": "6,21"
-    },
-    {
-        "Categoria": "Artes e Entretenimento",
-        "CPM (R$)": "2,49",
-        "CTR (%)": "2,59",
-        "CPC (R$)": "2,49"
-    },
-    {
-        "Categoria": "Advogados e Serviços Jurídicos",
-        "CPM (R$)": "6,32",
-        "CTR (%)": "0,99",
-        "CPC (R$)": "6,32"
-    },
-    {
-        "Categoria": "Automotivo – Venda",
-        "CPM (R$)": "4,58",
-        "CTR (%)": "1,02",
-        "CPC (R$)": "4,58"
-    },
-    {
-        "Categoria": "Automotivo – Reparos e Peças",
-        "CPM (R$)": "5,57",
-        "CTR (%)": "1,10",
-        "CPC (R$)": "5,57"
-    },
-    {
-        "Categoria": "Beleza e Cuidados Pessoais",
-        "CPM (R$)": "5,45",
-        "CTR (%)": "1,51",
-        "CPC (R$)": "5,45"
-    },
-    {
-        "Categoria": "Serviços Empresariais",
-        "CPM (R$)": "4,87",
-        "CTR (%)": "1,16",
-        "CPC (R$)": "4,87"
-    },
-    {
-        "Categoria": "Carreira e Emprego",
-        "CPM (R$)": "3,89",
-        "CTR (%)": "1,41",
-        "CPC (R$)": "3,89"
-    },
-    {
-        "Categoria": "Dentistas e Serviços Odontológicos",
-        "CPM (R$)": "6,21",
-        "CTR (%)": "0,88",
-        "CPC (R$)": "6,21"
-    },
-    {
-        "Categoria": "Educação e Instrução",
-        "CPM (R$)": "4,47",
-        "CTR (%)": "1,21",
-        "CPC (R$)": "4,47"
-    },
-    {
-        "Categoria": "Finanças e Seguros",
-        "CPM (R$)": "6,09",
-        "CTR (%)": "0,85",
-        "CPC (R$)": "6,09"
-    },
-    {
-        "Categoria": "Móveis",
-        "CPM (R$)": "6,15",
-        "CTR (%)": "1,21",
-        "CPC (R$)": "6,15"
-    },
-    {
-        "Categoria": "Saúde e Fitness",
-        "CPM (R$)": "4,70",
-        "CTR (%)": "1,61",
-        "CPC (R$)": "4,70"
-    },
-    {
-        "Categoria": "Casa e Melhorias Domésticas",
-        "CPM (R$)": "5,10",
-        "CTR (%)": "1,26",
-        "CPC (R$)": "5,10"
-    },
-    {
-        "Categoria": "Industrial e Comercial",
-        "CPM (R$)": "4,47",
-        "CTR (%)": "0,99",
-        "CPC (R$)": "4,47"
-    },
-    {
-        "Categoria": "Serviços Pessoais",
-        "CPM (R$)": "4,70",
-        "CTR (%)": "1,37",
-        "CPC (R$)": "4,70"
-    },
-    {
-        "Categoria": "Médicos e Cirurgiões",
-        "CPM (R$)": "5,57",
-        "CTR (%)": "1,07",
-        "CPC (R$)": "5,57"
-    },
-    {
-        "Categoria": "Imobiliário",
-        "CPM (R$)": "3,77",
-        "CTR (%)": "2,60",
-        "CPC (R$)": "3,77"
-    },
-    {
-        "Categoria": "Restaurantes e Alimentação",
-        "CPM (R$)": "2,96",
-        "CTR (%)": "2,19",
-        "CPC (R$)": "2,96"
-    },
-    {
-        "Categoria": "Compras, Colecionáveis e Presentes",
-        "CPM (R$)": "3,94",
-        "CTR (%)": "1,67",
-        "CPC (R$)": "3,94"
-    },
-    {
-        "Categoria": "Esportes e Recreação",
-        "CPM (R$)": "4,18",
-        "CTR (%)": "1,27",
-        "CPC (R$)": "4,18"
-    },
-    {
-        "Categoria": "Viagens",
-        "CPM (R$)": "2,44",
-        "CTR (%)": "2,20",
-        "CPC (R$)": "2,44"
+    "Engajamento": {
+      "setores": {
+        "Varejo": {
+          "ctr": 3.0,
+          "cpc": 1.20
+        },
+        "Tecnologia": {
+          "ctr": 2.8,
+          "cpc": 1.50
+        },
+        "Saúde": {
+          "ctr": 2.5,
+          "cpc": 1.00
+        }
+      }
     }
-]
+  }
