@@ -38,7 +38,7 @@ def estimar_alcance(investimento, categoria, localizacao, tipo_campanha, access_
     ctr = setor["ctr"]
     cpc = setor["cpc"]
 
-    tamanho_publico = 1000000 # Exemplo de 1 milhão
+    tamanho_publico = 34500 # Exemplo de 1 milhão
     numero_cliques = investimento / cpc
     numero_impressoes = numero_cliques / (ctr / 100)
     alcance_estimado = min(numero_impressoes, tamanho_publico)
