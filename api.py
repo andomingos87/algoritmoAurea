@@ -4,74 +4,65 @@ from pydantic import BaseModel
 import math
 import json
 
-# Inicializa o FastAPI
 app = FastAPI()
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],  # Permite todas as origens; altere conforme necessário.
+    allow_origins=["*"],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
 )
 
-# Carrega os benchmarks do arquivo JSON
 with open('benchmark.json', 'r', encoding='utf-8') as f:
     benchmarks = json.load(f)
 
-# Modelo para requisição
 class EstimativaRequest(BaseModel):
     investimento: int
     categoria: str
-    tamanho_publico: int  # Novo parâmetro para receber o tamanho do público
+    tamanho_publico: int
     localizacao: dict
     access_token: str
-    age_min: int
-    age_max: int
-    gender: list[int]
-    interests: list[int]
 
-def estimar_alcance(investimento, categoria, tamanho_publico, age_min, age_max, gender_list, interests):
-    # Obter dados do benchmark para "Alcance e Visibilidade" e categoria especificada
+def estimar_alcance(investimento, categoria, tamanho_publico):
     campanha = benchmarks["Alcance e Visibilidade"]
     setor = campanha["setores"].get(categoria)
     if not setor:
         raise Exception(f"Categoria '{categoria}' não encontrada nos benchmarks.")
-    cpm = setor["cpm"]  # Usando CPM para calcular impressões
+    
+    # Dados do setor
+    cpm = setor["cpm"]  # Custo por Mil Impressões
+    taxa_engajamento = setor["taxa_engajamento"]  # Taxa de Engajamento (%)
+    ctr = setor["ctr"]  # Taxa de Cliques (%)
 
-    # Calcula o número de impressões estimadas
-    numero_impressoes = (investimento / cpm) * 1000  # Multiplica por 1000 porque o CPM é o custo por mil impressões
+    # Cálculo do número de impressões
+    numero_impressoes = (investimento / cpm) * 1000
 
-    # Define uma frequência média esperada
+    # Cálculo do alcance estimado
     frequencia_media = campanha.get("frequencia_media", 1.2)
-
-    # Calcula o alcance estimado
     alcance_estimado = numero_impressoes / frequencia_media
-
-    # O alcance não pode ser maior que o tamanho do público
     alcance_estimado = min(alcance_estimado, tamanho_publico)
-
-    # Pode adicionar uma margem de erro se desejar
+  
+    # Ajuste com margem de erro
     margem_erro = min(0.05 * investimento, 0.1 * alcance_estimado)
     alcance_estimado_com_margem = alcance_estimado + margem_erro
 
-    return math.ceil(alcance_estimado_com_margem)
+    # Retorno dos resultados
+    return {
+        "alcance_estimado": math.ceil(alcance_estimado_com_margem)
+    }
 
 # Endpoint para estimativa de alcance
 @app.post("/estimativa-alcance")
 async def estimativa(request: EstimativaRequest):
     try:
-        # Tentar calcular o alcance estimado
-        alcance = estimar_alcance(
+        # Cálculo dos resultados
+        resultados = estimar_alcance(
             investimento=request.investimento,
             categoria=request.categoria,
-            tamanho_publico=request.tamanho_publico,
-            age_min=request.age_min,
-            age_max=request.age_max,
-            gender_list=request.gender,
-            interests=request.interests
+            tamanho_publico=request.tamanho_publico
         )
-        return {"alcance_estimado": alcance}
+        return resultados
 
     except HTTPException as http_exc:
         # Repassar exceções já tratadas como HTTPException
