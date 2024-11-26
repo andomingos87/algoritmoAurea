@@ -46,6 +46,7 @@ def estimar_alcance(investimento, categoria, tamanho_publico):
     # Ajuste com margem de erro
     margem_erro = min(0.05 * investimento, 0.1 * alcance_estimado)
     alcance_estimado_com_margem = alcance_estimado + margem_erro
+    alcance_estimado_com_margem = min(alcance_estimado_com_margem, tamanho_publico)
 
     # Retorno dos resultados
     return {
