@@ -13,7 +13,7 @@ class AudienceEstimateRequest(BaseModel):
     location_ids: list
     auto_targeting_enabled: bool
 
-@app.post("/estimate_audience/")
+@app.post("/tiktok-estimate_audience/")
 async def estimate_audience(request_data: AudienceEstimateRequest):
     # Endpoint e token de acesso
     url = "https://business-api.tiktok.com/open_api/v1.3/ad/audience_size/estimate/"
