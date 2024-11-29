@@ -21,7 +21,6 @@ class EstimativaRequest(BaseModel):
     investimento: int
     categoria: str
     tamanho_publico: int
-    localizacao: dict
     access_token: str
 
 def estimar_alcance(investimento, categoria, tamanho_publico):

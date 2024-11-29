@@ -1,0 +1,19 @@
+{
+    "age_min": 20,
+    "age_max": 35,
+    "genders": [
+        1
+    ],
+    "geo_locations": {
+        "regions": [
+      {
+        "key": "459"
+      }
+    ]
+    },
+    "interests": [
+        {
+            "id": "6003139266461"
+        }
+    ]
+}
