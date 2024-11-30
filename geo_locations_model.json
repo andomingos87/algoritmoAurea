@@ -1,0 +1,19 @@
+{
+    "geo_locations": {
+        "countries": [
+            "US"
+        ],
+        "regions": [
+            {
+                "key": "4081"
+            }
+        ],
+        "cities": [
+            {
+                "key": 777934,
+                "radius": 10,
+                "distance_unit": "mile"
+            }
+        ]
+    }
+}
